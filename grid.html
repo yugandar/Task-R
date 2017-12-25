@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>my project</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link href="css/form.css" rel="stylesheet">
+  <script src="js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="js/add-more.js" ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <header class="main" >
+       
+          <div class="row">
+           <div class="col-md-12">
+               
+                 <h1><span><img class="logo" src="img/images.jpg"> 
+		                       </span>	 Create Feature/Test case </h1>
+                
+           </div>
+
+         </div>
+       
+     </header>
+	 
+	 
+<div class="jumbotron">
+          
+      <div class="form-group">
+    <span class="text-muted"><em><span style="color:red;">*</span> Indicates mandatory fields</em></span>
+  </div>    
+   
+   
+     
+    <!--Form  start-->
+    <div id="form_name">
+     
+       <form name="form" method="get" action="#" >
+       <div class="formbody">
+	     <div class="form-group">Tag Name <span style="color:red;" >*</span>
+        <input type="text" name="Name" value="" placeholder="Tag Name" class="form-control" required  ></div>
+		<div class="form-group">Feature <span style="color:red;">*</span>
+        <input type="text" name="Name" value="" placeholder="Feature" class="form-control" required ></div>
+		<div class="form-group">Scenario Outline<span style="color:red;">*</span>
+		<input type="text" name="Name" value="" placeholder="Scenario Outline" class="form-control" required ></div>
+		<!--<div class="form-group">Steps<span style="color:red;">*</span>
+        <input type="text" name="Name" value="" placeholder="Steps" class="form-control"  required ></div>-->
+		<div class="form-group">Examples<span style="color:red;">*</span>
+		<input type="text" name="Name" value="" placeholder="Examples" class="form-control"  required ></div>
+		<div class="form-group">
+          <label>steps</label>
+          <select id="something" class="form-control" placeholder="select" required >
+		    <option value="">-------select-------</option> 
+            <option value="abc">something</option>
+            <option value="abc">something</option>
+            <option value="abc">something</option>
+          </select>
+        </div>
+		<!--<div class="form-group" id="profs"> 
+                <form class="input-append">
+                    <div id="field"><input autocomplete="off" class="input" id="field1" name="prof1" type="text" placeholder="Type something" data-items="8"/></div>
+                </form>
+            
+            
+            </div>-->
+		<!--	<SELECT name="element">
+	<OPTION value="something enter here">something enter here</OPTION>
+	<OPTION value="something enter here">something enter here</OPTION>
+	<OPTION value="something enter here">something enter here</OPTION>
+     </SELECT>-->
+
+<!--<INPUT type="button" value="Add" onclick="add(document.forms[0].element.value)"/>
+
+<div id="fooBar"></div>-->
+
+
+       </div>
+      
+    
+    <div >
+        <button id="b1" class="btn btn-primary add-more" type="button" onclick="$('#something').append('<option>Something</option>')">Add Steps</button>
+		
+      
+        <button id="submit"  class="btn btn-primary" onclick="AddExamples()">Add Examples </button>
+        <button id="submit"  class="btn btn-primary" onclick="$('#something').Remove('<option>Something</option>">Remove </button>
+      
+        <button id="submit" class="btn btn-primar" onclick="SaveFeature()">Save feature </button>
+		<button id="reset" class="btn btn-primary" onclick="">reset  </button>
+      </div>
+        
+     </form>
+      </div>
+    <!--form ends--> 
+   
+  </div>
+</div>
+<!--container ends-->
+   
+ <script>
+     CKEDITOR.replace( 'editor1' );
+ </script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+</body>
+
+</html>
